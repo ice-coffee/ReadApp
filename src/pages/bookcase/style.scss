@@ -1,0 +1,39 @@
+.bookcase {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .home_search {
+    width: 100%;
+    height: 50rpx;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: 0rpx 10rpx;
+    padding: 0rpx 10rpx;
+    border:2px solid #dddddd;
+    background:#dddddd;
+    border-radius:10px;
+
+    .icon {
+      width: 30rpx;
+      height: 30rpx;
+    }
+
+    .input {
+      margin: 0rpx 10rpx;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .home_banner {
+    width: 100%;
+    height: 417rpx;
+    margin-top: 10rpx;
+  }
+
+  .home_icon {
+
+  }
+}
