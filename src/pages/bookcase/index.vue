@@ -40,15 +40,17 @@
 
     <!--热门连载-->
     <div class="hotbook">
-      <div class="head">
-        {{hotBooks.title}}
-        <span class="more">更多 ></span>
-      </div>
-      <div class="book_list" v-for="(item, index) in hotBooks.bookList" :key="index">
-        <img class="book_img" :src="item.image"/>
-        <div class="book_content">
-          <p class="title">{{item.name}}</p>
-          <p class="desc">{{item.desc}}</p>
+      <div v-for="(item, index) in bookTypes" :key="index">
+        <div class="head">
+          {{item.title}}
+          <span class="more">更多 ></span>
+        </div>
+        <div class="book_list" v-for="(bookItem, bookIndex) in item.bookList" :key="bookIndex">
+          <img class="book_img" :src="bookItem.image"/>
+          <div class="book_content">
+            <p class="title">{{bookItem.name}}</p>
+            <p class="desc">{{bookItem.desc}}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -69,36 +71,128 @@ export default {
       icon: [
         {}
       ],
-      hotBooks: {
-        title: '热门连载',
-        bookList: [
-          {
-            image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
-            name: '妹子,我教你修仙',
-            desc: '妹子,你有房吗'
-          },
-          {
-            image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
-            name: '妹子,我教你修仙',
-            desc: '妹子,你有房吗'
-          },
-          {
-            image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
-            name: '妹子,我教你修仙',
-            desc: '妹子,你有房吗'
-          },
-          {
-            image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
-            name: '妹子,我教你修仙',
-            desc: '妹子,你有房吗'
-          },
-          {
-            image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
-            name: '妹子,我教你修仙',
-            desc: '妹子,你有房吗'
-          }
-        ]
-      }
+      bookTypes: [
+        {
+          title: '热门连载',
+          bookList: [
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            },
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            },
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            },
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            },
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            }
+          ]
+        },
+        {
+          title: '男生短片',
+          bookList: [
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            },
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            },
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            },
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            },
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            }
+          ]
+        },
+        {
+          title: '大神推荐',
+          bookList: [
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            },
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            },
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            },
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            },
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            }
+          ]
+        },
+        {
+          title: '经典完本',
+          bookList: [
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            },
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            },
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            },
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            },
+            {
+              image: 'http://i0.hdslb.com/bfs/archive/ffe9735cdb517513b7de05d95767eef31abe3da9.jpg',
+              name: '妹子,我教你修仙',
+              desc: '妹子,你有房吗'
+            }
+          ]
+        }
+      ]
     }
   }
 }
