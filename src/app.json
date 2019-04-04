@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/bookcase/main",
+    "pages/shuchang/main",
     "pages/ranking/main",
+    "pages/my/main",
     "pages/classification/main",
     "pages/project/main"
   ],
@@ -24,22 +26,16 @@
         "text": "书架"
       },
       {
-        "pagePath": "pages/classification/main",
+        "pagePath": "pages/shuchang/main",
         "iconPath": "static/images/tar_classification_normal.png",
         "selectedIconPath": "static/images/tar_classification_selected.png",
-        "text": "分类"
+        "text": "书厂"
       },
       {
-        "pagePath": "pages/project/main",
-        "iconPath": "static/images/tar_project_normal.png",
-        "selectedIconPath": "static/images/tar_project_selected.png",
-        "text": "专题"
-      },
-      {
-        "pagePath": "pages/ranking/main",
+        "pagePath": "pages/my/main",
         "iconPath": "static/images/tar_ranking_normal.png",
         "selectedIconPath": "static/images/tar_ranking_selected.png",
-        "text": "排行"
+        "text": "我的"
       }
     ]
   }

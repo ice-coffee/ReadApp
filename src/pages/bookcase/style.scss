@@ -4,12 +4,12 @@
   position: relative;
 
   .home_search {
-    width: 100%;
-    height: 50rpx;
+    width: 95%;
+    height: 60rpx;
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    margin: 0rpx 10rpx;
+    margin: 10rpx auto 0rpx;
     padding: 0rpx 10rpx;
     border:2px solid #dddddd;
     background:#dddddd;
@@ -22,8 +22,7 @@
 
     .input {
       margin: 0rpx 10rpx;
-      display: flex;
-      align-items: center;
+      font-size: 22rpx;
     }
   }
 
@@ -34,6 +33,63 @@
   }
 
   .home_icon {
+    width: 100%;
+    display: flex;
+    background-color: white;
 
+    div {
+      flex: 1;
+      text-align: center;
+
+      img {
+        height: 86rpx;
+        width: 86rpx;
+        margin: auto;
+        display: block;
+      }
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .hotbook {
+    background-color: white;
+    margin-top: 33rpx;
+
+    .book_list {
+      display: flex;
+    }
+    .book_img {
+      width: 200rpx;
+      height: 250rpx;
+      margin: 20rpx;
+    }
+    .book_content {
+      width: 100%;
+      margin: 20rpx 20rpx 20rpx 6rpx;
+
+      .title {
+        color: #444444;
+        font-size: 38rpx;
+        font-weight: 400;
+        margin-top: 20rpx;
+        margin-bottom: 30rpx;
+      }
+      .desc {
+        color: #999999;
+        font-size: 22rpx;
+      }
+    }
+  }
+
+  .head {
+    text-align: left;
+    padding: 40rpx 20rpx 26rpx 20rpx;
+
+    .more {
+      float: right;
+    }
   }
 }
