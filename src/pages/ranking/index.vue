@@ -1,67 +1,53 @@
 <template>
-  <div>
-    <div class="navbar">
-      <block v-for="(item,index) in tabs" :key="index">
-        <div :id="index" :class="{'navbar_item_on':activeIndex == index}" class="navbar_item" @click="tabClick">
-          <div class="navbar_title">{{item.name}}</div>
-        </div>
-      </block>
-      <div class="navbar_slider" :class="navbarSliderClass"></div>
-    </div>
-    <div>
-      <div :hidden="activeIndex != 0">选项一的内容</div>
-      <div :hidden="activeIndex != 1">选项二的内容</div>
-      <div :hidden="activeIndex != 2">选项三的内容</div>
-    </div>
+  <div class="ranking">
+
+    <navigator url="/pages/rankingDesc/main?rankingType=0">
+      <div class="item">
+        <img class="itemCover" src="/static/images/bg_rank_cover.png"/>
+        <span class="itemName">人气榜</span>
+        <img class="itemArrow" src="/static/images/ic_arrow_right.png"/>
+      </div>
+    </navigator>
+
+    <navigator url="/pages/rankingDesc/main?rankingType=1">
+      <div class="item">
+        <img class="itemCover" src="/static/images/bg_rank_cover.png"/>
+        <span class="itemName">原创榜</span>
+        <img class="itemArrow" src="/static/images/ic_arrow_right.png"/>
+      </div>
+    </navigator>
+
+    <navigator url="/pages/rankingDesc/main?rankingType=2">
+      <div class="item">
+        <img class="itemCover" src="/static/images/bg_rank_cover.png"/>
+        <span class="itemName">完结榜</span>
+        <img class="itemArrow" src="/static/images/ic_arrow_right.png"/>
+      </div>
+    </navigator>
+
+    <navigator url="/pages/rankingDesc/main?rankingType=3">
+      <div class="item">
+        <img class="itemCover" src="/static/images/bg_rank_cover.png"/>
+        <span class="itemName">新书榜</span>
+        <img class="itemArrow" src="/static/images/ic_arrow_right.png"/>
+      </div>
+    </navigator>
+
+    <navigator url="/pages/rankingDesc/main?rankingType=4">
+      <div class="item">
+        <img class="itemCover" src="/static/images/bg_rank_cover.png"/>
+        <span class="itemName">书友推荐榜</span>
+        <img class="itemArrow" src="/static/images/ic_arrow_right.png"/>
+      </div>
+    </navigator>
+
   </div>
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        tabs: [
-          {
-            name: '选项卡1',
-            type: '1',
-            checked: true
-          },
-          {
-            name: '选项卡2',
-            type: '2',
-            checked: true
-          },
-          {
-            name: '选项卡3',
-            type: '3',
-            checked: true
-          }
-        ],
-        activeIndex: 0
-      }
-    },
-    computed: {
-      navbarSliderClass: function () {
-        if (this.activeIndex === 0) {
-          console.log('1')
-          return 'navbar_slider_0'
-        } else if (this.activeIndex === 1) {
-          console.log('2')
-          return 'navbar_slider_1'
-        } else if (this.activeIndex === 2) {
-          console.log('3')
-          return 'navbar_slider_2'
-        }
-      }
-    },
-    methods: {
-      tabClick: function (e) {
-        this.activeIndex = e.currentTarget.id
-      }
-    }
-  }
+
 </script>
 
-<style lang="scsss" scoped>
+<style lang="scss" scoped>
   @import "./style.scss";
 </style>

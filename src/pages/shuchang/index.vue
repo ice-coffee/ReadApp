@@ -24,18 +24,24 @@
 
     <!--icon-->
     <div class="home_icon">
-      <div class="icon_rank">
-        <img src="/static/images/ic_ranking.png">
-        <span>排行榜</span>
-      </div>
-      <div class="icon_classification">
-        <img src="/static/images/ic_classification.png">
-        <span>分类</span>
-      </div>
-      <div class="icon_project">
-        <img src="/static/images/ic_project.png">
-        <span>专题</span>
-      </div>
+      <navigator url="/pages/ranking/main">
+        <div class="icon_rank">
+          <img src="/static/images/ic_ranking.png">
+          <span>排行榜</span>
+        </div>
+      </navigator>
+      <navigator>
+        <div class="icon_classification">
+          <img src="/static/images/ic_classification.png">
+          <span>分类</span>
+        </div>
+      </navigator>
+      <navigator>
+        <div class="icon_project">
+          <img src="/static/images/ic_project.png">
+          <span>专题</span>
+        </div>
+      </navigator>
     </div>
 
     <!--热门连载-->
