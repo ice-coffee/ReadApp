@@ -1,0 +1,125 @@
+.shuchuang {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .home_search {
+    width: 95%;
+    height: 60rpx;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: 10rpx auto 0rpx;
+    padding: 0rpx 10rpx;
+    border:2px solid #dddddd;
+    background:#dddddd;
+    border-radius:10px;
+
+    .icon {
+      width: 30rpx;
+      height: 30rpx;
+    }
+
+    .input {
+      margin: 0rpx 10rpx;
+      font-size: 22rpx;
+    }
+  }
+
+  .home_banner {
+    width: 100%;
+    height: 417rpx;
+    margin-top: 10rpx;
+  }
+
+  .home_icon {
+    width: 100%;
+    display: flex;
+    background-color: white;
+
+    div {
+      flex: 1;
+      text-align: center;
+
+      img {
+        height: 86rpx;
+        width: 86rpx;
+        margin: auto;
+        display: block;
+      }
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .bookType {
+    margin-top: 23rpx;
+
+    .book_list {
+      display: flex;
+      margin: 10rpx;
+    }
+    .book_img {
+      width: 200rpx;
+      height: 250rpx;
+      margin-right: 20rpx;
+    }
+    .book_content {
+      flex: 1;
+      margin: auto 0rpx;
+
+      .title {
+        color: #444444;
+        font-size: 38rpx;
+        font-weight: 400;
+        margin-top: 20rpx;
+        margin-bottom: 30rpx;
+      }
+      .introduction {
+        color: #999999;
+        font-size: 22rpx;
+      }
+      .desc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30rpx;
+
+        img {
+          width: 25rpx;
+          height: 25rpx;
+        }
+
+        .descText{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .auther {
+            color: #999999;
+            font-size: 22rpx;
+          }
+          .state {
+            margin: 0rpx 5rpx;
+            font-size: 18rpx;
+            padding: 3rpx 5rpx;
+            border:2px solid #dddddd;
+            background:#dddddd;
+            border-radius:10px;
+          }
+        }
+      }
+    }
+  }
+
+  .head {
+    text-align: left;
+    padding: 40rpx 20rpx 26rpx 20rpx;
+
+    .more {
+      float: right;
+    }
+  }
+}

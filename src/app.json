@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/bookcase/main",
     "pages/shuchang/main",
+    "pages/bookcase/main",
     "pages/ranking/main",
     "pages/my/main",
     "pages/classification/main",

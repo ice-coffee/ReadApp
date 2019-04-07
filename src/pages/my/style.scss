@@ -1,0 +1,35 @@
+.my {
+
+  .item {
+    height: 150rpx;
+    display: flex;
+    align-items: center;
+
+    .itemName {
+      flex: 1;
+    }
+
+    .itemIcon {
+      height: 60rpx;
+      width: 60rpx;
+      margin: 0rpx 20rpx;
+    }
+    .itemArrow {
+      height: 40rpx;
+      width: 40rpx;
+      margin: 0rpx 20rpx;
+    }
+    .vipOpen {
+      width: 100rpx;
+      height: 50rpx;
+      border: 4rpx solid #FF0000;
+      border-radius: 30rpx;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0rpx 20rpx;
+      font-size: 25rpx;
+      color: #FF0000;
+    }
+  }
+}
