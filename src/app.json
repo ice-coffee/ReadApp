@@ -4,9 +4,9 @@
     "pages/bookcase/main",
     "pages/my/main",
     "pages/ranking/main",
+    "pages/rankingDesc/main",
     "pages/classification/main",
-    "pages/project/main",
-    "pages/rankingDesc/main"
+    "pages/project/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

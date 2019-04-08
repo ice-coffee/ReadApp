@@ -30,7 +30,7 @@
           <span>排行榜</span>
         </div>
       </navigator>
-      <navigator>
+      <navigator url="/pages/classification/main">
         <div class="icon_classification">
           <img src="/static/images/ic_classification.png">
           <span>分类</span>
