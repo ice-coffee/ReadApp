@@ -1,0 +1,73 @@
+.freeBanner {
+  margin-top: 10rpx;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20rpx 30rpx;
+
+  span:first-child {
+    font-size: 40rpx;
+    color: #000000;
+    font-weight: bold;
+  }
+  span:last-child {
+    font-size: 25rpx;
+    color: #000000;
+  }
+}
+
+.timeFree {
+  margin-top: 20rpx;
+
+  .bookList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10rpx;
+
+    div {
+      width: calc(100% / 4);
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    img {
+      display: block;
+    }
+    span {
+      font-size: 25rpx;
+    }
+    .bookImage {
+      width: 170rpx;
+      height: 200rpx;
+    }
+  }
+}
+
+.newBooks, .futureBooks, .gameBooks {
+  margin: 20rpx 10rpx 0rpx 10rpx;
+
+  .bookList {
+
+    navigator {
+      display: flex;
+      margin: 10rpx;
+    }
+    .bookImage {
+      width: 170rpx;
+      height: 200rpx;
+    }
+    .bookDesc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-left: 20rpx;
+
+      span {
+        font-size: 25rpx;
+      }
+    }
+  }
+}

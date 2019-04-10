@@ -2,12 +2,14 @@
   <div class="classification">
 
     <div class="classItem" v-for="(item, index) in classIficationList" :key="index">
-      <div class="itemTitle">
-        <span>{{item.className}}</span>
-      </div>
-      <div class="itemDesc">
-        <span>{{item.classDesc}}</span>
-      </div>
+      <navigator url="/pages/classificationDetails/main">
+        <div class="itemTitle">
+          <span>{{item.className}}</span>
+        </div>
+        <div class="itemDesc">
+          <span>{{item.classDesc}}</span>
+        </div>
+      </navigator>
     </div>
 
   </div>

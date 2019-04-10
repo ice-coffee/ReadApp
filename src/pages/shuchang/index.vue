@@ -36,10 +36,16 @@
           <span>分类</span>
         </div>
       </navigator>
+      <navigator url="/pages/free/main">
+        <div class="icon_project">
+          <img src="/static/images/ic_project.png">
+          <span>免费</span>
+        </div>
+      </navigator>
       <navigator>
         <div class="icon_project">
           <img src="/static/images/ic_project.png">
-          <span>专题</span>
+          <span>全本</span>
         </div>
       </navigator>
     </div>

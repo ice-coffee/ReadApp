@@ -6,7 +6,9 @@
     "pages/ranking/main",
     "pages/rankingDesc/main",
     "pages/classification/main",
-    "pages/project/main"
+    "pages/project/main",
+    "pages/classificationDetails/main",
+    "pages/free/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
