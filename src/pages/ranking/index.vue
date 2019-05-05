@@ -20,23 +20,23 @@ export default {
     return {
       rankList: [
         {
-          rankCover: '/static/images/bg_rank_cover.png',
+          rankCover: 'https://bookcover.yuewen.com/qdbimg/349573/1010868264/180',
           rankTitle: '人气榜'
         },
         {
-          rankCover: '/static/images/bg_rank_cover.png',
+          rankCover: 'https://bookcover.yuewen.com/qdbimg/349573/1010734492/180',
           rankTitle: '原创榜'
         },
         {
-          rankCover: '/static/images/bg_rank_cover.png',
+          rankCover: 'https://bookcover.yuewen.com/qdbimg/349573/1009704712/180',
           rankTitle: '完结榜'
         },
         {
-          rankCover: '/static/images/bg_rank_cover.png',
+          rankCover: 'https://bookcover.yuewen.com/qdbimg/349573/1013926412/180',
           rankTitle: '新书榜'
         },
         {
-          rankCover: '/static/images/bg_rank_cover.png',
+          rankCover: 'https://bookcover.yuewen.com/qdbimg/349573/1014151062/180',
           rankTitle: '书友推荐榜'
         }
       ]
