@@ -12,21 +12,6 @@
       </swiper>
     </div>
 
-    <!--限时免费-->
-    <div class="timeFree">
-      <div class="title">
-        <span>限时免费</span>
-      </div>
-      <div class="bookList">
-        <div v-for="(item, index) in timeFreeBooks" :key="index">
-          <navigator>
-            <img class="bookImage" :src="item.bookImage" />
-            <span>{{item.bookName}}</span>
-          </navigator>
-        </div>
-      </div>
-    </div>
-
     <!--分类推荐-->
     <div class="newBooks">
       <div v-for="(item, index) in classificationRecommendList" :key="index">
@@ -45,6 +30,7 @@
         </div>
       </div>
     </div>
+
   </div>
 </template>
 
@@ -53,55 +39,21 @@ export default {
   data () {
     return {
       banner: [
-        {bannerImage: 'https://bossaudioandcomic-1252317822.file.myqcloud.com/activity/document/7d3f40051a1ee5d94c7c908456d0ef10.jpg'},
-        {bannerImage: 'https://bossaudioandcomic-1252317822.file.myqcloud.com/activity/document/cb30cc17b91772f23adfded87c4f353d.jpg'}
-      ],
-      timeFreeBooks: [
-        {
-          bookImage: 'https://bookcover.yuewen.com/qdbimg/349573/1013926412/180',
-          bookName: '暗月纪元'
-        },
-        {
-          bookImage: 'https://bookcover.yuewen.com/qdbimg/349573/1013561350/180',
-          bookName: '仙宫'
-        },
-        {
-          bookImage: 'https://bookcover.yuewen.com/qdbimg/349573/1014234529/180',
-          bookName: '我夺舍了魔皇'
-        },
-        {
-          bookImage: 'https://bookcover.yuewen.com/qdbimg/349573/1013864366/180',
-          bookName: '我和二哈共系统'
-        },
-        {
-          bookImage: 'https://bookcover.yuewen.com/qdbimg/349573/1012237441/180',
-          bookName: '全球高武'
-        },
-        {
-          bookImage: 'https://bookcover.yuewen.com/qdbimg/349573/1012982353/180',
-          bookName: '史上最强赘婿'
-        },
-        {
-          bookImage: 'https://bookcover.yuewen.com/qdbimg/349573/1011486666/180',
-          bookName: '大医凌然'
-        },
-        {
-          bookImage: 'https://bookcover.yuewen.com/qdbimg/349573/1009704712/180',
-          bookName: '牧神记'
-        }
+        {bannerImage: 'https://bossaudioandcomic-1252317822.file.myqcloud.com/activity/document/cb30cc17b91772f23adfded87c4f353d.jpg'},
+        {bannerImage: 'https://bossaudioandcomic-1252317822.file.myqcloud.com/activity/document/b9f3fa69b08413e97c19afab962fb2e5.jpg'}
       ],
       classificationRecommendList: [
         {
           title: '新书精选',
           books: [
             {
-              image: 'https://bookcover.yuewen.com/qdbimg/349573/1010734492/180',
-              name: '凡人修仙之仙界篇',
-              desc: '修仙觅长生，热血任逍遥，踏莲曳波涤剑骨，凭虚御风塑圣魂！',
-              author: '忘语',
-              classification: '仙侠',
+              image: 'https://bookcover.yuewen.com/qdbimg/349573/1014151062/180',
+              name: '抢救大明朝',
+              desc: '醒掌天下权，醉卧美人膝，五千年风华烟雨，是非成败转头空！',
+              author: '大罗罗',
+              classification: '历史',
               state: '连载',
-              fraction: '9.0'
+              fraction: '4.5'
             },
             {
               image: 'https://bookcover.yuewen.com/qdbimg/349573/1009704712/180',
@@ -113,13 +65,13 @@ export default {
               fraction: '9.1'
             },
             {
-              image: 'https://bookcover.yuewen.com/qdbimg/349573/1011705052/180',
-              name: '明朝败家子',
-              desc: '醒掌天下权，醉卧美人膝，五千年风华烟雨，是非成败转头空！',
-              author: '上山打老虎额',
-              classification: '历史',
+              image: 'https://bookcover.yuewen.com/qdbimg/349573/1012237441/180',
+              name: '全球高武',
+              desc: '重生过去、畅想未来、梦幻现实，再塑传奇人生！',
+              author: '老鹰吃小鸡',
+              classification: '修仙',
               state: '连载',
-              fraction: '9.0'
+              fraction: '4.5'
             }
           ]
         },
@@ -145,12 +97,12 @@ export default {
               fraction: '9.0'
             },
             {
-              image: 'https://bookcover.yuewen.com/qdbimg/349573/3439785/180',
-              name: '修真四万年',
-              desc: '星海漫游，时空穿梭，机械科技，目标是未知的星辰大海！',
-              author: '卧牛真人',
-              classification: '未来世界',
-              state: '完结',
+              image: 'https://bookcover.yuewen.com/qdbimg/349573/1010868264/180',
+              name: '诡秘之主',
+              desc: '心潮澎湃，无限幻想，迎风挥击千层浪，少年不败热血！',
+              author: '爱潜水的乌贼',
+              classification: '异世大陆',
+              state: '连载',
               fraction: '9.2'
             }
           ]},
@@ -167,12 +119,12 @@ export default {
               fraction: '9.0'
             },
             {
-              image: 'https://bookcover.yuewen.com/qdbimg/349573/3660695/180',
-              name: '神藏',
-              desc: '重生过去、畅想未来、梦幻现实，再塑传奇人生！',
-              author: '打眼',
+              image: 'https://bookcover.yuewen.com/qdbimg/349573/1011486666/180',
+              name: '大医凌然',
+              desc: '医学院学生凌然有一个小目标，要成为世界上最伟大的医生，结果不小心实现了。',
+              author: '志鸟村',
               classification: '都市生活',
-              state: '完结',
+              state: '连载',
               fraction: '9.0'
             },
             {

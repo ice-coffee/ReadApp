@@ -8,7 +8,8 @@
     "pages/classification/main",
     "pages/project/main",
     "pages/classificationDetails/main",
-    "pages/free/main"
+    "pages/free/main",
+    "pages/end/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
