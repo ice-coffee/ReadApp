@@ -46,7 +46,7 @@
         <div class="head">
           {{item.title}}
         </div>
-        <navigator url="/pages/bookdetails/main" class="book_list" v-for="(bookItem, bookIndex) in item.bookList" :key="bookIndex">
+        <navigator :url="'/pages/bookdetails/main?bookId=' + bookItem.id" class="book_list" v-for="(bookItem, bookIndex) in item.bookList" :key="bookIndex">
           <img class="book_img" :src="bookItem.image"/>
           <div class="book_content">
             <p class="title">{{bookItem.name}}</p>

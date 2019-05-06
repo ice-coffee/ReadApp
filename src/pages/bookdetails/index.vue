@@ -37,18 +37,21 @@
 </template>
 
 <script>
+  import books from '../../utils/books'
+
   export default {
+    onShow () {
+      let bookId = parseInt(this.$root.$mp.query.bookId)
+      for (var i = 0; i < books.length; i++) {
+        let book = books[i]
+        if (book.id === bookId) {
+          this.bookDetails = book
+        }
+      }
+    },
     data () {
       return {
-        bookDetails: {
-          image: 'https://bookcover.yuewen.com/qdbimg/349573/1013926412/180',
-          name: '暗月纪元',
-          desc: '星海漫游，时空穿梭，机械科技，目标是未知的星辰大海！',
-          author: '仐三',
-          classification: '科幻',
-          state: '连载',
-          fraction: '4.5'
-        }
+        bookDetails: []
       }
     }
   }

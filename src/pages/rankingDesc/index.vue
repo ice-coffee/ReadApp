@@ -17,7 +17,6 @@
   import books from '../../utils/books'
 
   export default {
-
     onShow () {
       this.rankingType = this.$root.$mp.query.rankingType
       this.bookList = books.slice((0 + this.rankingType * 2), (5 + this.rankingType * 2))
