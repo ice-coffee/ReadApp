@@ -1,13 +1,13 @@
 <template>
   <div class="bookCase">
 
-    <div class="bookList" v-for="(item, index) in bookList" :key="index">
+    <navigator :url="'/pages/bookdetails/main?bookId=' + item.id" class="bookList" v-for="(item, index) in bookList" :key="index">
       <img class="bookImage" :src="item.image"/>
       <div class="bookContent">
         <div class="bookName">{{item.name}}</div>
         <div class="bookDesc">{{item.desc}}</div>
       </div>
-    </div>
+    </navigator>
 
   </div>
 </template>

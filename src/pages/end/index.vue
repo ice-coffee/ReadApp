@@ -19,7 +19,7 @@
           <span>{{item.title}}</span>
         </div>
         <div class="bookList" v-for="(recommendBooks, bookIndex) in item.books" :key="bookIndex">
-          <navigator>
+          <navigator :url="'/pages/bookdetails/main?bookId=' + recommendBooks.id">
             <img class="bookImage" :src="recommendBooks.image" />
             <div class="bookDesc">
               <span>{{recommendBooks.name}}</span>

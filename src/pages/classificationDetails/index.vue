@@ -27,9 +27,13 @@
   import books from '../../utils/books'
 
   export default {
+    onShow () {
+      let type = this.$root.$mp.query.type
+      this.bookList = books.slice((0 + type * 3), (5 + type * 3))
+    },
     data () {
       return {
-        bookList: books.slice()
+        bookList: []
       }
     }
   }

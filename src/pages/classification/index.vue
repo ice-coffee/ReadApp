@@ -1,8 +1,8 @@
 <template>
   <div class="classification">
 
-    <div class="classItem" v-for="(item, index) in classIficationList" :key="index">
-      <navigator url="/pages/classificationDetails/main">
+    <div class="classItem" v-for="(item, index) in classificationList" :key="index">
+      <navigator :url="'/pages/classificationDetails/main?type=' + index">
         <div class="itemTitle">
           <span>{{item.className}}</span>
         </div>
@@ -19,7 +19,7 @@
 export default {
   data () {
     return {
-      classIficationList: [
+      classificationList: [
         {
           className: '都市',
           classDesc: '生活 / 异能 / 重生 / 热血 / 人生'
