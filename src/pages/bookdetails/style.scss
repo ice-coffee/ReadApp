@@ -1,0 +1,88 @@
+.bookdetails {
+
+  .head {
+    display: flex;
+    margin: 20rpx;
+
+    .book_img {
+      width: 250rpx;
+      height: 300rpx;
+      margin-right: 20rpx;
+    }
+
+    .book_content {
+      flex: 1;
+
+      .title {
+        color: #444444;
+        font-size: 45rpx;
+        font-weight: 400;
+      }
+      .fraction {
+        color: #FD5027;
+        font-size: 38rpx;
+        font-weight: 700;
+      }
+      .classification {
+        color: #FD5027;
+        font-size: 38rpx;
+      }
+      .state {
+        margin: 0rpx 5rpx;
+        font-size: 18rpx;
+        padding: 3rpx 5rpx;
+        border:2px solid #dddddd;
+        background:#dddddd;
+        border-radius:10px;
+      }
+      .bookauther {
+        align-items: center;
+        margin-top: 30rpx;
+
+        img {
+          width: 25rpx;
+          height: 25rpx;
+        }
+
+        .auther {
+          color: #999999;
+          font-size: 22rpx;
+        }
+      }
+    }
+  }
+
+  .bookstate {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15rpx;
+
+    p {
+      text-align: center;
+    }
+    .statevalue {
+      color: #999999;
+      font-weight: 700;
+      font-size: 30rpx;
+    }
+    .statekey {
+      color: #E1E1E1;
+      font-size: 25rpx;
+    }
+  }
+
+  .introduction{
+    margin: 45rpx;
+
+    .title {
+      color: #222222;
+      font-weight: 700;
+      font-size: 45rpx;
+    }
+    p {
+      color: #666666;
+      font-size: 30rpx;
+      margin-top: 20rpx;
+    }
+  }
+}

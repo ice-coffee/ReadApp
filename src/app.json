@@ -9,7 +9,8 @@
     "pages/project/main",
     "pages/classificationDetails/main",
     "pages/free/main",
-    "pages/end/main"
+    "pages/end/main",
+    "pages/bookdetails/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

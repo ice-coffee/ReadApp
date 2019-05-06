@@ -45,9 +45,8 @@
       <div class="bookType" v-for="(item, index) in bookTypes" :key="index">
         <div class="head">
           {{item.title}}
-          <span class="more">更多 ></span>
         </div>
-        <div class="book_list" v-for="(bookItem, bookIndex) in item.bookList" :key="bookIndex">
+        <navigator url="/pages/bookdetails/main" class="book_list" v-for="(bookItem, bookIndex) in item.bookList" :key="bookIndex">
           <img class="book_img" :src="bookItem.image"/>
           <div class="book_content">
             <p class="title">{{bookItem.name}}</p>
@@ -64,7 +63,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </navigator>
       </div>
     </div>
 
