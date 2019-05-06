@@ -20,8 +20,8 @@
       <div class="bookList">
         <div v-for="(item, index) in timeFreeBooks" :key="index">
           <navigator>
-            <img class="bookImage" :src="item.bookImage" />
-            <span>{{item.bookName}}</span>
+            <img class="bookImage" :src="item.image" />
+            <span>{{item.name}}</span>
           </navigator>
         </div>
       </div>
@@ -49,147 +49,33 @@
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      banner: [
-        {bannerImage: 'https://bossaudioandcomic-1252317822.file.myqcloud.com/activity/document/7d3f40051a1ee5d94c7c908456d0ef10.jpg'},
-        {bannerImage: 'https://bossaudioandcomic-1252317822.file.myqcloud.com/activity/document/cb30cc17b91772f23adfded87c4f353d.jpg'}
-      ],
-      timeFreeBooks: [
-        {
-          bookImage: 'https://bookcover.yuewen.com/qdbimg/349573/1013926412/180',
-          bookName: '暗月纪元'
-        },
-        {
-          bookImage: 'https://bookcover.yuewen.com/qdbimg/349573/1013561350/180',
-          bookName: '仙宫'
-        },
-        {
-          bookImage: 'https://bookcover.yuewen.com/qdbimg/349573/1014234529/180',
-          bookName: '我夺舍了魔皇'
-        },
-        {
-          bookImage: 'https://bookcover.yuewen.com/qdbimg/349573/1013864366/180',
-          bookName: '我和二哈共系统'
-        },
-        {
-          bookImage: 'https://bookcover.yuewen.com/qdbimg/349573/1012237441/180',
-          bookName: '全球高武'
-        },
-        {
-          bookImage: 'https://bookcover.yuewen.com/qdbimg/349573/1012982353/180',
-          bookName: '史上最强赘婿'
-        },
-        {
-          bookImage: 'https://bookcover.yuewen.com/qdbimg/349573/1011486666/180',
-          bookName: '大医凌然'
-        },
-        {
-          bookImage: 'https://bookcover.yuewen.com/qdbimg/349573/1009704712/180',
-          bookName: '牧神记'
-        }
-      ],
-      classificationRecommendList: [
-        {
-          title: '新书精选',
-          books: [
-            {
-              image: 'https://bookcover.yuewen.com/qdbimg/349573/1010734492/180',
-              name: '凡人修仙之仙界篇',
-              desc: '修仙觅长生，热血任逍遥，踏莲曳波涤剑骨，凭虚御风塑圣魂！',
-              author: '忘语',
-              classification: '仙侠',
-              state: '连载',
-              fraction: '9.0'
-            },
-            {
-              image: 'https://bookcover.yuewen.com/qdbimg/349573/1009704712/180',
-              name: '牧神记',
-              desc: '大墟的祖训说，天黑，别出门。',
-              author: '宅猪',
-              classification: '东方玄幻',
-              state: '连载',
-              fraction: '9.1'
-            },
-            {
-              image: 'https://bookcover.yuewen.com/qdbimg/349573/1011705052/180',
-              name: '明朝败家子',
-              desc: '醒掌天下权，醉卧美人膝，五千年风华烟雨，是非成败转头空！',
-              author: '上山打老虎额',
-              classification: '历史',
-              state: '连载',
-              fraction: '9.0'
-            }
-          ]
-        },
-        {
-          title: '新书精选',
-          books: [
-            {
-              image: 'https://bookcover.yuewen.com/qdbimg/349573/1011058239/180',
-              name: '伏天氏',
-              desc: '心潮澎湃，无限幻想，迎风挥击千层浪，少年不败热血！',
-              author: '净无痕',
-              classification: '东方玄幻',
-              state: '连载',
-              fraction: '9.1'
-            },
-            {
-              image: 'https://bookcover.yuewen.com/qdbimg/349573/1009480992/180',
-              name: '超神机械师',
-              desc: '肆意挥洒激情的游戏人生，打破现实框架的无尽幻想！',
-              author: '齐佩甲',
-              classification: '游戏异界',
-              state: '连载',
-              fraction: '9.0'
-            },
-            {
-              image: 'https://bookcover.yuewen.com/qdbimg/349573/3439785/180',
-              name: '修真四万年',
-              desc: '星海漫游，时空穿梭，机械科技，目标是未知的星辰大海！',
-              author: '卧牛真人',
-              classification: '未来世界',
-              state: '完结',
-              fraction: '9.2'
-            }
-          ]},
-        {
-          title: '新书精选',
-          books: [
-            {
-              image: 'https://bookcover.yuewen.com/qdbimg/349573/1623837/180',
-              name: '黄金瞳',
-              desc: '重生过去、畅想未来、梦幻现实，再塑传奇人生！',
-              author: '打眼',
-              classification: '都市生活',
-              state: '完结',
-              fraction: '9.0'
-            },
-            {
-              image: 'https://bookcover.yuewen.com/qdbimg/349573/3660695/180',
-              name: '神藏',
-              desc: '重生过去、畅想未来、梦幻现实，再塑传奇人生！',
-              author: '打眼',
-              classification: '都市生活',
-              state: '完结',
-              fraction: '9.0'
-            },
-            {
-              image: 'https://bookcover.yuewen.com/qdbimg/349573/1011694114/180',
-              name: '我的大明新帝国',
-              desc: '醒掌天下权，醉卧美人膝，五千年风华烟雨，是非成败转头空！',
-              author: '摇摇-欲坠',
-              classification: '历史',
-              state: '完结',
-              fraction: '8.6'
-            }
-          ]
-        }
-      ]
+  import books from '../../utils/books'
+
+  export default {
+    data () {
+      return {
+        banner: [
+          {bannerImage: 'https://bossaudioandcomic-1252317822.file.myqcloud.com/activity/document/7d3f40051a1ee5d94c7c908456d0ef10.jpg'},
+          {bannerImage: 'https://bossaudioandcomic-1252317822.file.myqcloud.com/activity/document/cb30cc17b91772f23adfded87c4f353d.jpg'}
+        ],
+        timeFreeBooks: books.slice(0, 8),
+        classificationRecommendList: [
+          {
+            title: '新书精选',
+            books: books.slice(0, 4)
+          },
+          {
+            title: '新书榜',
+            books: books.slice(4, 8)
+          },
+          {
+            title: '名家推荐',
+            books: books.slice(8, 12)
+          }
+        ]
+      }
     }
   }
-}
 </script>
 
 <style lang="scss" scoped>

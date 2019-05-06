@@ -2,7 +2,7 @@
   <div class="ranking">
 
     <div v-for="(item, index) in rankList" :key="index">
-      <navigator url="/pages/rankingDesc/main?rankingType=0">
+      <navigator :url="'/pages/rankingDesc/main?rankingType='+index">
         <div class="item">
           <img class="itemCover" :src="item.rankCover"/>
           <span class="itemName">{{item.rankTitle}}</span>
