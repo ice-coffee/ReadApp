@@ -13,17 +13,14 @@
 </template>
 
 <script>
-  import books from '../../utils/books'
-
   export default {
+    onShow () {
+      this.bookList = JSON.parse(wx.getStorageSync('books'))
+    },
     data () {
       return {
-        bookList: books
+        bookList: []
       }
-    },
-    onShow () {
-      wx.setStorageSync('logs', JSON.stringify(books.slice(0, 5)))
-      this.bookList = JSON.parse(wx.getStorageSync('logs'))
     }
   }
 </script>

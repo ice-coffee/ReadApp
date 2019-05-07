@@ -7,7 +7,9 @@ export default [
     author: '仐三',
     classification: '科幻',
     state: '连载',
-    fraction: '4.5'
+    fraction: '4.5',
+    fan: '40w',
+    wordCount: '40w'
   },
   {
     id: 2,
@@ -17,7 +19,9 @@ export default [
     author: '打眼',
     classification: '修仙',
     state: '连载',
-    fraction: '4.6'
+    fraction: '4.5',
+    fan: '15w',
+    wordCount: '41w'
   },
   {
     id: 3,
@@ -27,7 +31,9 @@ export default [
     author: '八月飞鹰',
     classification: '异世',
     state: '连载',
-    fraction: '4.5'
+    fraction: '5.5',
+    fan: '7w',
+    wordCount: '56w'
   },
   {
     id: 4,
@@ -37,7 +43,9 @@ export default [
     author: '玄雨',
     classification: '玄幻',
     state: '连载',
-    fraction: '4.5'
+    fraction: '4.7',
+    fan: '9w',
+    wordCount: '45w'
   },
   {
     id: 5,
@@ -47,7 +55,9 @@ export default [
     author: '大罗罗',
     classification: '历史',
     state: '连载',
-    fraction: '4.5'
+    fraction: '5.8',
+    fan: '34w',
+    wordCount: '52w'
   },
   {
     id: 6,
@@ -57,7 +67,9 @@ export default [
     author: '昨夜大雨',
     classification: '时空穿梭',
     state: '连载',
-    fraction: '8.7'
+    fraction: '8.7',
+    fan: '65w',
+    wordCount: '78w'
   },
   {
     id: 7,
@@ -67,7 +79,9 @@ export default [
     author: '老鹰吃小鸡',
     classification: '修仙',
     state: '连载',
-    fraction: '4.5'
+    fraction: '4.5',
+    fan: '121w',
+    wordCount: '63w'
   },
   {
     id: 8,
@@ -77,7 +91,9 @@ export default [
     author: '爱潜水的乌贼',
     classification: '异世大陆',
     state: '连载',
-    fraction: '9.2'
+    fraction: '9.2',
+    fan: '156w',
+    wordCount: '64w'
   },
   {
     id: 9,
@@ -87,7 +103,9 @@ export default [
     author: '沉默的糕点',
     classification: '东方玄幻',
     state: '连载',
-    fraction: '8.5'
+    fraction: '8.5',
+    fan: '177w',
+    wordCount: '78w'
   },
   {
     id: 10,
@@ -97,7 +115,9 @@ export default [
     author: '志鸟村',
     classification: '都市生活',
     state: '连载',
-    fraction: '9.0'
+    fraction: '9.0',
+    fan: '97w',
+    wordCount: '75w'
   },
   {
     id: 11,
@@ -107,7 +127,9 @@ export default [
     author: '忘语',
     classification: '仙侠',
     state: '连载',
-    fraction: '9.0'
+    fraction: '9.0',
+    fan: '196w',
+    wordCount: '56w'
   },
   {
     id: 12,
@@ -117,7 +139,9 @@ export default [
     author: '宅猪',
     classification: '东方玄幻',
     state: '连载',
-    fraction: '9.1'
+    fraction: '9.1',
+    fan: '132w',
+    wordCount: '51w'
   },
   {
     id: 13,
@@ -127,7 +151,9 @@ export default [
     author: '上山打老虎额',
     classification: '历史',
     state: '连载',
-    fraction: '9.0'
+    fraction: '9.0',
+    fan: '55w',
+    wordCount: '56w'
   },
   {
     id: 14,
@@ -137,7 +163,9 @@ export default [
     author: '净无痕',
     classification: '东方玄幻',
     state: '连载',
-    fraction: '9.1'
+    fraction: '9.1',
+    fan: '47w',
+    wordCount: '38w'
   },
   {
     id: 15,
@@ -147,7 +175,9 @@ export default [
     author: '齐佩甲',
     classification: '游戏异界',
     state: '连载',
-    fraction: '9.0'
+    fraction: '9.0',
+    fan: '117w',
+    wordCount: '113w'
   },
   {
     id: 16,
@@ -157,7 +187,9 @@ export default [
     author: '卧牛真人',
     classification: '未来世界',
     state: '完结',
-    fraction: '9.2'
+    fraction: '9.2',
+    fan: '47w',
+    wordCount: '59w'
   },
   {
     id: 17,
@@ -167,7 +199,9 @@ export default [
     author: '天蚕土豆',
     classification: '异世大陆',
     state: '完结',
-    fraction: '8.8'
+    fraction: '8.8',
+    fan: '210w',
+    wordCount: '120w'
   },
   {
     id: 18,
@@ -177,7 +211,9 @@ export default [
     author: '打眼',
     classification: '都市生活',
     state: '完结',
-    fraction: '9.0'
+    fraction: '9.0',
+    fan: '32w',
+    wordCount: '63w'
   },
   {
     id: 19,
@@ -187,7 +223,9 @@ export default [
     author: '打眼',
     classification: '都市生活',
     state: '完结',
-    fraction: '9.0'
+    fraction: '9.0',
+    fan: '77w',
+    wordCount: '83w'
   },
   {
     id: 20,
@@ -197,6 +235,8 @@ export default [
     author: '摇摇-欲坠',
     classification: '历史',
     state: '完结',
-    fraction: '8.6'
+    fraction: '8.6',
+    fan: '55w',
+    wordCount: '59w'
   }
 ]

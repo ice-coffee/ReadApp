@@ -16,7 +16,7 @@
 
     <div class="bookstate">
       <div>
-        <p class="statevalue">827</p>
+        <p class="statevalue">{{bookDetails.fan}}</p>
         <p class="statekey">人气</p>
       </div>
       <div>
@@ -24,7 +24,7 @@
         <p class="statekey">状态</p>
       </div>
       <div>
-        <p class="statevalue">827</p>
+        <p class="statevalue">{{bookDetails.wordCount}}</p>
         <p class="statekey">字数</p>
       </div>
     </div>
@@ -32,6 +32,11 @@
     <div class="introduction">
       <span class="title">简介</span>
       <p class="desc">{{bookDetails.desc}}</p>
+    </div>
+
+    <div class="operate">
+      <div class="read" @click="readBook(bookDetails)">开始阅读</div>
+      <div class="collect" @click="collectBook(bookDetails)">添加收藏</div>
     </div>
   </div>
 </template>
@@ -51,7 +56,38 @@
     },
     data () {
       return {
-        bookDetails: []
+        bookDetails: {}
+      }
+    },
+    methods: {
+      readBook: function (e) {
+        console.log('readbook')
+      },
+      collectBook: function (bookDetails) {
+        let bookListJson = wx.getStorageSync('books')
+        let bookList = []
+        if (bookListJson.length !== 0) {
+          bookList = JSON.parse(wx.getStorageSync('books'))
+        }
+
+        for (let i = 0; i < bookList.length; i++) {
+          let book = bookList[i]
+          if (Object.keys(book).length === 0) {
+            return
+          }
+
+          if (book.id === bookDetails.id) {
+            wx.showModal({
+              content: '已收藏'
+            })
+            return
+          }
+        }
+        bookList.push(bookDetails)
+        wx.setStorageSync('books', JSON.stringify(bookList))
+        wx.showModal({
+          content: '收藏成功'
+        })
       }
     }
   }
